@@ -15,12 +15,12 @@ public class CommonMethods {
 	
 
 	@Test
-	public static void openPaytm() {
+	public static void openPaytmmall() {
 
 		HomePageTest.driver.get(Constants.applicationUrl);
 	
 	
-		Log.info("Opened www.paytm.com.");
+		Log.info("Opened www.paytmmall.com.");
 		HomePageTest.driver.manage().window().maximize();
 		Log.info("Window is maximized");
 	}
