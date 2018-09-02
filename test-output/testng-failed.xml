@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
-  <listeners>
-    <listener class-name="utility.TestNGListener"/>
-  </listeners>
-  <test thread-count="2" name="Test(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.HomePageTest">
+      <class name="pageObjects.kqw">
         <methods>
-          <include name="verifyFlyoutTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
+          <include name="testSiblingAndParentInXpath"/>
         </methods>
-      </class> <!-- Test.HomePageTest -->
+      </class> <!-- pageObjects.kqw -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
